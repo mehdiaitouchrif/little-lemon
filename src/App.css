@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Markazi+Text:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary-color: #495e57;
+  --secondary-color: #f4ce14;
+  --tertiary-color: #ee9972;
+  --font-color: #333;
+  --light-gray-color: #edefee;
+  --light-orange-color: #fbfabb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Karla", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+  padding: 1rem;
+}
+
+nav .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav img {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 1.15rem;
+}
+
+nav li a {
+  color: var(--font-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background: var(--primary-color);
+  color: var(--light-gray-color);
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+footer ul li {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--light-gray-color);
+}
+
+footer ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 720px) {
+  nav ul {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 540px) {
+  footer .container {
+    grid-template-columns: 1fr;
   }
 }
