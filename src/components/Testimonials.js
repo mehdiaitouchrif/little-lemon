@@ -1,4 +1,5 @@
 import TestimonialItem from "./TestimonialItem";
+import styles from "../styles/Testimonials.module.css";
 
 const Testimonials = () => {
   const testimonials = [
@@ -32,10 +33,10 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="testimonials">
-      <div className="container">
+    <div className={styles.testimonials}>
+      <div className={styles.testimonialsContainer}>
         <h2>What people say about us!</h2>
-        <div className="testimonials-grid">
+        <div className={styles.testimonialsGrid}>
           {testimonials.map((testimonial) => (
             <TestimonialItem key={testimonial.id} testimonial={testimonial} />
           ))}

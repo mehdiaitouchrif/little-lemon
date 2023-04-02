@@ -5,13 +5,14 @@ import {
   faInstagramSquare,
   faPinterestSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
         {/* Logo */}
-        <div className="logo">
+        <div className={styles.footerLogo}>
           <img src="/Logo-white.png" alt="" />
         </div>
         {/* Doormat Navigation */}
@@ -46,7 +47,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <ul>
           <h3>Follow Us</h3>
-          <div className="social-links">
+          <div className={styles.footerLinks}>
             <li>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon size="2x" icon={faFacebookSquare} />

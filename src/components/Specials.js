@@ -1,4 +1,6 @@
 import MealCard from "./MealCard";
+import styles from "../styles/Specials.module.css";
+import Button from "./Button";
 
 const Specials = () => {
   const meals = [
@@ -29,13 +31,13 @@ const Specials = () => {
   ];
 
   return (
-    <div className="specials">
-      <div className="container">
-        <div className="specials-header">
+    <div className={styles.specials}>
+      <div className={styles.specialsContainer}>
+        <div className={styles.specialsHeader}>
           <h2>This weeks specials!</h2>
-          <button className="btn">Online Menu</button>
+          <Button>Online Menu</Button>
         </div>
-        <div className="specials-grid">
+        <div className={styles.specialsGrid}>
           {meals.map((meal) => (
             <MealCard key={meal.id} meal={meal} />
           ))}

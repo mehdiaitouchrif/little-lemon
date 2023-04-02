@@ -1,9 +1,11 @@
+import styles from "../styles/About.module.css";
+
 const About = () => {
   return (
-    <div className="about">
-      <div className="container">
+    <div className={styles.about}>
+      <div className={styles.aboutContainer}>
         {/* Text */}
-        <div className="about-text">
+        <div className={styles.aboutText}>
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
@@ -22,7 +24,7 @@ const About = () => {
         </div>
 
         {/* Photos of Adrian & Mario */}
-        <div className="about-photos">
+        <div className={styles.aboutPhotos}>
           <img src="mario-and-adrian-1.jpg" alt="" />
           <img src="mario-and-adrian-2.jpg" alt="" />
         </div>

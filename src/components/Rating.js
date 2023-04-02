@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/Rating.module.css";
 
 const Rating = ({ rating }) => {
   const fullStars = Math.floor(rating);
@@ -8,7 +9,7 @@ const Rating = ({ rating }) => {
   const emptyStars = maxStars - fullStars - (hasHalfStar ? 1 : 0);
 
   return (
-    <div className="rating">
+    <div className={styles.rating}>
       {[...Array(fullStars)].map((_, i) => (
         <FontAwesomeIcon key={i} icon={faStar} />
       ))}

@@ -1,19 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBicycle } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/MeaCard.module.css";
 
 const MealCard = ({ meal }) => {
   return (
-    <div className="meal-card">
-      <div className="meal-img">
+    <div className={styles.mealCard}>
+      <div className={styles.mealImg}>
         <img src={meal.image} alt="" />
       </div>
-      <div className="meal-details">
-        <div className="meal-details-header">
+      <div className={styles.mealDetails}>
+        <div className={styles.mealDetailsHeader}>
           <h3>{meal.title}</h3>
           <p>${meal.price}</p>
         </div>
-        <div className="meal-details-description">{meal.description}</div>
-        <div className="meal-details-footer">
+        <div className={styles.mealDetailsDescription}>{meal.description}</div>
+        <div className={styles.mealDetailsFooter}>
           <a href="/order">Order a delivery</a>
           <FontAwesomeIcon icon={faBicycle} />
         </div>

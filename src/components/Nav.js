@@ -1,7 +1,9 @@
+import styles from "../styles/Nav.module.css";
+
 const Nav = () => {
   return (
-    <nav>
-      <div className="container">
+    <nav className={styles.nav}>
+      <div className={styles.navContainer}>
         {/* Logo */}
         <img src="/Logo.svg" alt="" />
         {/* Navigation links */}
