@@ -18,7 +18,7 @@
 
 body {
   font-family: "Karla", sans-serif;
-  color: #333;
+  color: var(--font-color);
 }
 
 a {
@@ -270,6 +270,45 @@ blockquote {
   border-radius: 50%;
 }
 
+/* About */
+.about {
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-family: "Markazi";
+  color: var(--secondary-color);
+}
+
+.about h3 {
+  font-size: 2rem;
+  font-family: "Markazi";
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.about-photos {
+  width: 90%;
+}
+
+.about-photos img {
+  width: 100%;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 /* Footer */
 footer {
   padding: 2rem;
@@ -344,6 +383,15 @@ footer ul li a:hover {
     border-radius: 50%;
   }
 
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+  .about-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
   footer .container {
     grid-template-columns: 1fr 1fr;
   }
@@ -356,6 +404,12 @@ footer ul li a:hover {
   .testimonial img {
     width: 30%;
     border-radius: 50%;
+  }
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+  .about-photos {
+    width: 100%;
   }
   footer .container {
     grid-template-columns: 1fr;
