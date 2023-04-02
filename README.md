@@ -6,7 +6,7 @@ Little Lemon is a restaurant website built using React, as part of the Meta Fron
 
 To install the project, follow these steps:
 
-1. Clone the repository to your local machine using `git clone https://github.com/your-username/little-lemon.git`.
+1. Clone the repository to your local machine using `git clone https://github.com/mehdiaitouchrif/little-lemon.git`.
 2. Navigate to the project directory using `cd little-lemon`.
 3. Run `npm install` to install the necessary dependencies.
 
