@@ -210,6 +210,9 @@ blockquote {
   font-weight: bold;
   font-size: 1.1rem;
   margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .meal-img {
@@ -335,6 +338,11 @@ footer h3 {
   text-transform: uppercase;
 }
 
+footer .social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
 footer ul li {
   font-size: 1.1rem;
   line-height: 1.5;

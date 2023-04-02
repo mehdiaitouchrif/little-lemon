@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBicycle } from "@fortawesome/free-solid-svg-icons";
+
 const MealCard = ({ meal }) => {
   return (
     <div className="meal-card">
@@ -12,6 +15,7 @@ const MealCard = ({ meal }) => {
         <div className="meal-details-description">{meal.description}</div>
         <div className="meal-details-footer">
           <a href="/order">Order a delivery</a>
+          <FontAwesomeIcon icon={faBicycle} />
         </div>
       </div>
     </div>
