@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../styles/CallToAction.module.css";
 import Button from "./Button";
 
@@ -16,7 +17,9 @@ const CallToAction = () => {
               nesciunt officiis non similique.
             </p>
           </div>
-          <Button>Reserve a table</Button>
+          <Link to="/reservations">
+            <Button>Reserve a table</Button>
+          </Link>
         </div>
         {/* Image */}
         <div className={styles.heroImg}>

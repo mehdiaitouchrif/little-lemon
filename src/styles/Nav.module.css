@@ -10,8 +10,12 @@
   align-items: center;
 }
 
+.navLogo {
+  width: 220px;
+}
+
 .navContainer img {
-  width: 200px;
+  width: 100%;
 }
 
 .navContainer ul {
@@ -27,7 +31,7 @@
 .navContainer li a {
   color: var(--font-color);
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
 }
 

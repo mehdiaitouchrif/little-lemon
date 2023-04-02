@@ -1,6 +1,7 @@
 import MealCard from "./MealCard";
 import styles from "../styles/Specials.module.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Specials = () => {
   const meals = [
@@ -35,7 +36,9 @@ const Specials = () => {
       <div className={styles.specialsContainer}>
         <div className={styles.specialsHeader}>
           <h2>This weeks specials!</h2>
-          <Button>Online Menu</Button>
+          <Link to="/menu">
+            <Button>Online Menu</Button>
+          </Link>
         </div>
         <div className={styles.specialsGrid}>
           {meals.map((meal) => (
