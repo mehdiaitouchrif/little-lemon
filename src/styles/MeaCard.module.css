@@ -38,8 +38,8 @@
   color: var(--tertiary-color);
 }
 
-.meaDetailsDescription {
-  margin: 2rem 0;
+.mealDetailsDescription {
+  margin: 1.5rem 0;
   line-height: 1.4;
 }
 
